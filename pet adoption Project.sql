@@ -1,4 +1,23 @@
 
+CREATE DATABASE Pet_AdoptionData;
+USE Pet_AdoptionData;
+
+CREATE TABLE pet_adoptiondata (
+    PetID INT PRIMARY KEY,
+    PetType VARCHAR(100),
+    Breed VARCHAR(100),
+    AgeMonth INT,
+    Color VARCHAR(100),
+    Size VARCHAR(100),
+    WeightKg FLOAT,
+    Vaccinated INT,
+    HealthCondition INT,
+    TimeInShelterDays INT,
+    AdoptionFee INT,
+    PreviousOwner INT,
+    AdoptionLikelihood INT
+);
+
 /*what are the most common pet type are available for adoption and how does there average age compare */ 
 SELECT * FROM pet_adoptiondata.pet_adoption_data;
 SELECT PetType, 
